@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AutoDev AI | Dashboard</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="brand"><span class="brand-mark">A</span><div><strong>AutoDev AI</strong><small>SUPPORT INTELLIGENCE</small></div></div>
+    <nav><a class="active" href="/dashboard">▦ &nbsp; Visão geral</a><a href="#reports">◷ &nbsp; Relatos</a></nav>
+    <form action="/logout" method="post"><button class="logout">Sair da conta</button></form>
+  </aside>
+  <main class="content">
+    <header class="topbar"><div><span class="eyebrow">PAINEL DE CONTROLE</span><h1>Visão geral</h1><p>Central de suporte e monitoramento inteligente.</p></div><span class="status"><i></i> Sistema operacional</span></header>
+    <section class="stats">
+      <article class="stat"><span>Relatos recebidos</span><strong id="total">—</strong><small>Total registrado</small></article>
+      <article class="stat"><span>Aguardando análise</span><strong id="pending">—</strong><small>Novos relatos</small></article>
+      <article class="stat"><span>Alto risco</span><strong id="high">—</strong><small>Precisam de atenção</small></article>
+    </section>
+    <section class="panel" id="reports">
+      <div class="section-head"><div><h2>Relatos recentes</h2><p>Problemas enviados pelos visitantes do seu site.</p></div><button class="secondary" id="refresh">Atualizar</button></div>
+      <div id="report-list" class="report-list"><p class="muted">Carregando relatos...</p></div>
+    </section>
+    <p class="footnote">AutoDev AI · MVP de suporte. Nenhuma alteração de código é publicada nesta versão.</p>
+  </main>
+  <script src="/assets/js/dashboard.js"></script>
+</body></html>
